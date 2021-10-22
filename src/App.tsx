@@ -11,6 +11,8 @@ import UserPage from './components/UserPage';
 import TodosTage from './components/TodosTage';
 import UserItemPage from './components/UserItemPage';
 import TodoItemPage from './components/TodoItemPage';
+import AlbomItemPage from './components/AlbomItem';
+import Albom from './components/Albom';
 
 const App = ()=> {
   
@@ -24,6 +26,7 @@ const App = ()=> {
       <div>
 <NavLink to='/users'>User</NavLink>
 <NavLink to='/todos'>List does</NavLink>
+<NavLink to='/albums'>Albommmmmmmmmssssss</NavLink>
       </div>
    <Route path={'/users'} exact>
      <UserPage/>
@@ -33,12 +36,19 @@ const App = ()=> {
      <TodosTage/>
      </Route>
 
+     <Route path={'/albums'} exact>
+     <Albom/>
+     </Route>
+
      <Route path={'/users/:id'}>
      <UserItemPage/>
      </Route>
      <Route path={'/todos/:id'}>
      <TodoItemPage/>
-     </Route>     
+     </Route>  
+     {/* <Route path={'/albums/:id'}>
+     <AlbomItemPage/>
+     </Route>    */}
     </div>
     </BrowserRouter>
     

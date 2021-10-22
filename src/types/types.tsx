@@ -15,3 +15,7 @@ export interface ITodo{
     title:string;
     completed:boolean;
 }
+export interface IAlbum{
+    id:number;
+   title:string;
+  }
